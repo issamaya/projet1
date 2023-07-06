@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket-Mawazine</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <div id="acceuil">      
+             <a href="index.html" target="_blank">Acceuil</a>
+             <h1 id="h1">Festival mawazine</h1>
+
+        <img id="mawazine" src="./img/mawazine.jpg" alt="mawazine" >
+    </div>
+    </header>
+    <main>
+        <div id="reservation">
+        <fieldset id="fieldset" >
+            <legend id="legend">Reservation</legend>
+        
+        <form class="form1">
+            <div id="first_part">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+          
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+          
+            <label for="email">Email   :</label>
+            <input type="email" id="email" name="email" required><br><br>
+          
+            <label for="nb_tickets">Nombre de tickets :</label>
+            <input type="number" id="nb_tickets" name="nb_tickets" min="1" max="10" required><br><br>
+        </div>
+            <p id="p">type de tickets</p><br>
+            <label for=type_ticket>standard</label>
+            <input type="radio" id="type_ticket" name="type_ticket" value="type_ticket">
+
+            <label for="type_ticket1">premium</label>
+            <input type="radio" id="type_ticket1" name="type_ticket" value="type_ticket1">
+
+            <label for="type_ticket2">VIP</label>
+            <input type="radio" id="type_ticket2" name="type_ticket" value="type_ticket2"><br><br>
+
+          
+
+            <label for="mode_paiement"> mode de paiement</label>
+            <select id="mode-paiement mode-paiement">
+                <option value="carte"> --choisir carte-- </option>
+                <option value="debit"> carte debit </option>
+                <option value="credit"> carte credit </option>
+            </select><br><br>
+        <div id="second_part">
+            <label for="proprietaire">Nom du propiétaire</label>
+            <input type="text" id="proprietaire" name="proprietaire"><br><br>
+
+            <label for="numero-carte">Numéro de la carte</label>
+            <input type="number" id="numero-carte" name="numero-carte" ><br><br>
+
+            <label for="date_expiration">la date d'expiration</label>
+            <input type="number" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" value="__-____" ><br><br>
+
+            <label for="code-securite"> le code de securité</label>
+            <input type="text" id="code-securité" name="code-securite"><br><br>
+        </div>
+            <input type="submit" value="Acheter" id="acheter" >
+          </form>
+        </fieldset><br><br>
+    </div>
+    <div id="reclamation">
+        <p id="p">      Pour toute reclamations  ou remboursement de tickets , veuillez remplir le formulaire si-desous :</p>
+        <fieldset id="fieldset">
+            <legend id="legend">Reclamations-Remboursement</legend>
+            <form class="form2">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+              
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+              
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="n_reservation">numéro de résérvation :</label>
+                <input type="text" id="n_reservation" name="n_reservation" required><br><br>
+
+                <label for="motif">le motif :</label>
+                <input type="text" id="motif" name="motif" required ><br><br><br>
+
+                <p id="pa">veuillez noter que votre demande sera traiter dans un délai de 48 h </p><br>
+                <p id="pa">Pour toute intervention d'urgence veuillez appeler par téléphone</p><br>
+
+            </form>
+        </fieldset>
+    </div>
+    </main>
+    <footer>  
+          <p>nous joindre</p>
+          <p>tel : +212 62017 1734 </p>
+          <p>email : support-mawazine@mawazine.ma</p>
+    </footer> 
+    
+    
+</body>
+</html>
